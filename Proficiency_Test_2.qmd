@@ -2,7 +2,7 @@
 title: "Proficiency Test 2"
 author: 
   name: Caitlin A. Kane
-format: html
+format: pdf
 editor: visual
 ---
 
