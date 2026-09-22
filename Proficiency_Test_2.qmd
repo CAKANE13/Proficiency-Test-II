@@ -39,7 +39,19 @@ How many cars have a value greater than or equal to 150 disp in the mtcars datas
 count_above(mtcars, mtcars$disp, 150)
 ```
 \newpage
+
 ## Task - 3
 
-The concept of masking functions involves 
+The concept of masking functions involves when a new package hides a function from an older package. For example, you install a package in R and it hides a function from an already installed package on your R. 
 
+\newpage 
+
+## Task - 4
+
+```{r}
+iris$Sepal.Length[1]
+iris[1,1]
+```
+The first code returns the first value of the iris data set for Sepal.Length. 
+
+The iris[1,1] returns the value for the first row, first column data point, which in this case is the first vale of the Sepal.Length column for the iris data set. Therefore, they produce the same output. 
