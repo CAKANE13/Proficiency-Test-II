@@ -13,6 +13,31 @@ for(i in 1:length(mtcars)){
   print(mtcars$mpg)
 }
 ```
-# Task - 2
+## Task - 2
+```{r}
+count_above <- function(data,count,cutoff){ #assigns the function
+  count_above
+  
+  for (i in 1:length(count)){ #defines what the function is doing 
+    if(count[i] > cutoff){
+      count<- count+1 #for instance, the function with take the count and add 1 to it 
+    }
+  }
+  return(count) #This is what the code will give you when ran 
+}
+```
+How many flowers have a seapl length greater than 6 cm in the iris dataset?
+```{r}
 
+count_above(iris, iris$Sepal.Length, 6)
+
+```
+How many cars have a value greater than or equal to 150 disp in the mtcars dataset?
+```{r}
+
+count_above(mtcars, mtcars$disp, 150)
+```
+## Task - 3
+
+The concept of masking functions involves 
 

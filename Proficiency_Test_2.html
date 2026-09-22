@@ -151,8 +151,52 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="task---2" class="level1">
-<h1>Task - 2</h1>
+<section id="task---2" class="level2">
+<h2 class="anchored" data-anchor-id="task---2">Task - 2</h2>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>count_above <span class="ot">&lt;-</span> <span class="cf">function</span>(data,count,cutoff){ <span class="co">#assigns the function</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  count_above</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">length</span>(count)){ <span class="co">#defines what the function is doing </span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span>(count[i] <span class="sc">&gt;</span> cutoff){</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>      count<span class="ot">&lt;-</span> count<span class="sc">+</span><span class="dv">1</span> <span class="co">#for instance, the function with take the count and add 1 to it </span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(count) <span class="co">#This is what the code will give you when ran </span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<p>How many flowers have a seapl length greater than 6 cm in the iris dataset?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count_above</span>(iris, iris<span class="sc">$</span>Sepal.Length, <span class="dv">6</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] 105.1 104.9 104.7 104.6 105.0 105.4 104.6 105.0 104.4 104.9 105.4 104.8
+ [13] 104.8 104.3 105.8 105.7 105.4 105.1 105.7 105.1 105.4 105.1 104.6 105.1
+ [25] 104.8 105.0 105.0 105.2 105.2 104.7 104.8 105.4 105.2 105.5 104.9 105.0
+ [37] 105.5 104.9 104.4 105.1 105.0 104.5 104.4 105.0 105.1 104.8 105.1 104.6
+ [49] 105.3 105.0 107.0 106.4 106.9 105.5 106.5 105.7 106.3 104.9 106.6 105.2
+ [61] 105.0 105.9 106.0 106.1 105.6 106.7 105.6 105.8 106.2 105.6 105.9 106.1
+ [73] 106.3 106.1 106.4 106.6 106.8 106.7 106.0 105.7 105.5 105.5 105.8 106.0
+ [85] 105.4 106.0 106.7 106.3 105.6 105.5 105.5 106.1 105.8 105.0 105.6 105.7
+ [97] 105.7 106.2 105.1 105.7 106.3 105.8 107.1 106.3 106.5 107.6 104.9 107.3
+[109] 106.7 107.2 106.5 106.4 106.8 105.7 105.8 106.4 106.5 107.7 107.7 106.0
+[121] 106.9 105.6 107.7 106.3 106.7 107.2 106.2 106.1 106.4 107.2 107.4 107.9
+[133] 106.4 106.3 106.1 107.7 106.3 106.4 106.0 106.9 106.7 106.9 105.8 106.8
+[145] 106.7 106.7 106.3 106.5 106.2 105.9</code></pre>
+</div>
+</div>
+<p>How many cars have a value greater than or equal to 150 disp in the mtcars dataset?</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">count_above</span>(mtcars, mtcars<span class="sc">$</span>disp, <span class="dv">150</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] 182.0 182.0 130.0 280.0 382.0 247.0 382.0 168.7 162.8 189.6 189.6 297.8
+[13] 297.8 297.8 494.0 482.0 462.0 100.7  97.7  93.1 142.1 340.0 326.0 372.0
+[25] 422.0 101.0 142.3 117.1 373.0 167.0 323.0 143.0</code></pre>
+</div>
+</div>
+</section>
+<section id="task---3" class="level2">
+<h2 class="anchored" data-anchor-id="task---3">Task - 3</h2>
+<p>The concept of masking functions involves</p>
 </section>
 
 </main>
