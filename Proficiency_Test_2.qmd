@@ -10,9 +10,10 @@ editor: visual
 
 ```{r}
 for(i in 1:length(mtcars)){
-  print(mtcars$mpg)
+  print(mtcars$mpg[1:3])
 }
 ```
+\newpage
 ## Task - 2
 ```{r}
 count_above <- function(data,count,cutoff){ #assigns the function
@@ -37,6 +38,7 @@ How many cars have a value greater than or equal to 150 disp in the mtcars datas
 
 count_above(mtcars, mtcars$disp, 150)
 ```
+\newpage
 ## Task - 3
 
 The concept of masking functions involves 
