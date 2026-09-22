@@ -1,0 +1,18 @@
+---
+title: "Proficiency Test 2"
+author: 
+  name: Caitlin A. Kane
+format: html
+editor: visual
+---
+
+## Task - 1
+
+```{r}
+for(i in 1:length(mtcars)){
+  print(mtcars$mpg)
+}
+```
+# Task - 2
+
+
